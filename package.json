@@ -1,0 +1,8 @@
+{
+  "name": "docker.nodejs"
+, "version": "0.10.35"
+, "private": true
+, "scripts": {
+    "test": "cd test && for test in ./*.sh; do \"$test\"; done"
+  }
+}
