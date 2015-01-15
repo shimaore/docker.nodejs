@@ -16,5 +16,5 @@ RUN apt-get purge -y \
   make
 RUN apt-get autoremove -y
 RUN apt-get clean
-RUN n stable
+RUN n 0.10.35
 ENV NODE_ENV production
