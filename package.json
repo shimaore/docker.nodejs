@@ -3,6 +3,8 @@
 , "version": "0.10.35"
 , "private": true
 , "scripts": {
-    "test": "cd test && for test in ./*.sh; do \"$test\"; done"
+    "install": "make"
+  , "pretest": "npm install"
+  , "test": "cd test && for test in ./*.sh; do \"$test\"; done"
   }
 }

@@ -6,13 +6,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   curl \
   git \
   make
+# Install Node.js using `n`.
 RUN git clone https://github.com/tj/n.git
 WORKDIR n
 RUN make install
 WORKDIR ..
 RUN apt-get purge -y \
-  ca-certificates \
-  git \
   make
 RUN apt-get autoremove -y
 RUN apt-get clean
