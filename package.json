@@ -1,10 +1,10 @@
 {
-  "name": "docker.nodejs"
-, "version": "0.10.36"
-, "private": true
-, "scripts": {
-    "install": "make"
-  , "pretest": "npm install"
-  , "test": "cd test && for test in ./*.sh; do \"$test\"; done"
+  "name": "docker.nodejs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "make",
+    "pretest": "npm install",
+    "test": "cd test && for test in ./*.sh; do \"$test\"; done"
   }
 }
