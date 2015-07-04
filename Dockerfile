@@ -1,4 +1,4 @@
-FROM shimaore/debian
+FROM shimaore/debian:2.0.0
 MAINTAINER Stéphane Alnet <stephane@shimaore.net>
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -15,5 +15,5 @@ RUN apt-get purge -y \
   make
 RUN apt-get autoremove -y
 RUN apt-get clean
-RUN n 0.10.36
+RUN n io 2.3.3
 ENV NODE_ENV production
